@@ -1,16 +1,17 @@
  #grid {
     display: grid;
-    height: 100vh;
+    height: 125vh;
     grid-template-columns: 15% auto 30%;
-    grid-template-rows: 10% 20% 1fr 1fr 1fr 15%;
+    grid-template-rows: 8% 15% 1fr 1fr 12%;
     background-color: #3498db;
     grid-template-areas:  
     "nav nav nav"
     "hd hd hd" 
-    "sc1 mn as1"
-    "sc2 mn as1"
-    "sc3 mn as2"
-    "ft ft ft";
+    "mn mn as1"
+    "mn mn as2"
+    "ft ft ft"; 
+
+   
     
  }
 
@@ -27,6 +28,7 @@
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+
 }
 
 header {
@@ -48,54 +50,86 @@ header p {
     margin: 0.5rem; 
 }
 
+
 main {
     grid-area: mn;
+    background-image: url(../img/onur-binay-z3MP5DDiEME-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
 }
+
+ main p, main h2 {
+    background: rgba(255, 255, 255, 0.5);             
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    
+}
+
 
 #as1 {
     grid-area: as1;
+    background-image: url(../img/anthony-roberts-fMbiAi0rbkA-unsplash.jpg); 
+    background-size: cover;                  
+    background-position: center;              
+    background-repeat: no-repeat; 
 }
 
 #as2 {
     grid-area: as2;
+    background-image: url(../img/thomas-foster-vWgoeEYdtIY-unsplash.jpg);  
+    background-size: cover;                   
+    background-position: center;              
+    background-repeat: no-repeat; 
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#sc1 { 
-    grid-area: sc1; 
-}
-
-#sc2 { 
-    grid-area: sc2; 
-}
-
-#sc3 {
-    grid-area: sc3; 
-}
 
 footer {
     grid-area: ft;
+    text-align: center;
+    & h2 {
+        margin:0px 
+    }
+    margin-top: 5px;
+    
 }
 
 .social-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    margin-top: 15px;
+    gap: 40px;
+    margin-top: 5px;
 }
 
 .social-links img {
     width: 65px;  
     transition: transform 0.3s, filter 0.3s;
-    border-radius: 50%;
+    border-radius: 50%; 
+    
 }
 
 .social-links img:hover {
     transform: scale(1.2);
 }
 
-
-
-nav, header, main, section, aside, footer {
+nav, header, main, aside, footer {
     color: white;
 }
+
+/* footer h2 {
+    margin: 0%;
+} */
