@@ -10,7 +10,7 @@
     "mn mn as1"
     "mn mn as2"
     "ft ft ft"; 
-    
+
  }
 
  nav {
@@ -19,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav-links a {
@@ -50,29 +51,44 @@ header p {
 
 main {
     grid-area: mn;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center; 
+    position: relative;
+    padding: 2rem;
+    font-size: 1.8rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden; 
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
     background-image: url(../img/onur-binay-z3MP5DDiEME-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(5px);
 
-    padding: 2rem;
-    font-size: 1.8rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    filter: blur(6px);  
+    transform: scale(1.1);
     
+    z-index: 0;
 }
 
- main p, main h2 {
-    background: rgba(255, 255, 255, 0.5);             
+main h2, main p {
+    position: relative;
+    z-index: 1;
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    
+    text-align: center;
 }
+
 
 
 #as1 {
@@ -126,7 +142,11 @@ footer {
 nav, header, main, aside, footer {
     color: white;
 }
+ 
+body {
+  font-family:'Franklin Gothic Medium', sans-serif;
+}
 
-/* footer h2 {
-    margin: 0%;
-} */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
