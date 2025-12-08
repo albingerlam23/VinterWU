@@ -1,0 +1,137 @@
+#grid {
+    display: grid;
+    height: 125vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 20% auto 15%;
+    background-color: #3498db;
+    background: linear-gradient(to bottom, #3498db, #4963d7 );
+    grid-template-areas:  
+    "nav nav"
+    "hd hd"
+    "mn mn"
+    "ft ft"; 
+
+ }
+
+ nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+ 
+.nav-links a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+header p {
+    font-size: 1.5rem;
+    margin: 0.5rem; 
+}
+
+main {
+    grid-area: mn;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.produkt-container {
+    display: flex;
+    flex-wrap: nowrap;  
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.produkt-img { 
+    width: 250px;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 250px;
+}
+
+.produkt-img:hover {
+    transform: scale(1.05);
+}
+
+.produkt-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produkt-img h3 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.produkt-img p {
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+
+footer {
+    grid-area: ft;
+    text-align: center;
+    & h2 {
+        margin:0px 
+    }
+    margin-top: 5px;
+    
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 5px;
+}
+
+.social-links img {
+    width: 65px;  
+    transition: transform 0.3s, filter 0.3s;
+    border-radius: 50%; 
+    
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+nav, header, main, aside, footer {
+    color: white;
+}
+ 
+
+/* Tillfällig font */
+body {
+  font-family:'Franklin Gothic Medium', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}

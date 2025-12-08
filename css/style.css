@@ -4,6 +4,7 @@
     grid-template-columns: 15% auto 30%;
     grid-template-rows: 8% 15% 1fr 1fr 12%;
     background-color: #3498db;
+    background: linear-gradient(to bottom, #3498db, #4963d7 );
     grid-template-areas:  
     "nav nav nav"
     "hd hd hd" 
@@ -61,6 +62,7 @@ main {
     margin-right: 10px;
     margin-bottom: 10px;
     overflow: hidden; 
+    border-radius: 20px;
 }
 
 main::before {
@@ -70,14 +72,11 @@ main::before {
     left: 0;
     width: 100%;
     height: 100%;
-    
     background-image: url(../img/onur-binay-z3MP5DDiEME-unsplash.jpg);
     background-size: cover;
     background-position: center;
-
     filter: blur(6px);  
     transform: scale(1.1);
-    
     z-index: 0;
 }
 
@@ -97,6 +96,7 @@ main h2, main p {
     background-size: cover;                  
     background-position: center;              
     background-repeat: no-repeat; 
+    border-radius: 20px;
 }
 
 #as2 {
@@ -107,6 +107,7 @@ main h2, main p {
     background-repeat: no-repeat; 
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 
@@ -143,6 +144,8 @@ nav, header, main, aside, footer {
     color: white;
 }
  
+
+/* Tillfällig font */
 body {
   font-family:'Franklin Gothic Medium', sans-serif;
 }
