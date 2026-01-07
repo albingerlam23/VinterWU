@@ -1,0 +1,163 @@
+#grid {
+    display: grid;
+    height: 125vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 8% 30% auto 15%;
+    background-color: #3498db;
+    background: linear-gradient(to bottom, #3498db, #4963d7 );
+    grid-template-areas:  
+    "nav nav"
+    "hd hd"
+    "as mn"
+    "ft ft"; 
+ }
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+ .nav-links a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 2rem;
+    margin: 0.2rem; 
+}
+
+.produktbeskrivning {
+    font-size: 1.3rem;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+aside {
+    grid-area: as;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 450px;
+    height: 520px;
+    margin: auto;
+
+    border: 10px solid rgb(12, 14, 66);
+    border-radius: 20px;
+    background-color: white;
+
+
+}
+
+aside img {
+    width: 85%;
+    height: auto;
+    max-height: 420px;
+    border-radius: 15px;
+}
+
+main {
+    grid-area: mn;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 55%;
+    max-height: 440px;
+    margin: auto;
+    border: 10px solid rgb(12, 14, 66);
+    border-radius: 20px;
+    padding: 2.5rem; 
+    background-color: white;
+    color: black;
+    
+}
+
+main h2 {
+    font-size: 3rem;
+}
+
+.pris {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main li {
+    font-size: 1.4rem;
+    margin: 8px 0;
+}
+
+aside,
+main {
+    height: 520px;
+}
+
+footer {
+    grid-area: ft;
+    text-align: center;
+    & h2 {
+        margin:0px 
+    }
+    margin-top: 5px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 5px;
+}
+
+.social-links img {
+    width: 65px;  
+    transition: transform 0.3s, filter 0.3s;
+    border-radius: 50%; 
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+nav, header, aside, footer {
+    color: white;
+}
+ 
+
+/* Tillfällig font */
+body {
+  font-family:'Franklin Gothic Medium', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
