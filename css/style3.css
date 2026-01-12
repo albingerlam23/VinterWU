@@ -2,7 +2,7 @@
     display: grid;
     height: 125vh;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 8% 30% auto 15%;
+    grid-template-rows: 8% 25% auto 15%;
     background-color: #3498db;
     background: linear-gradient(to bottom, #3498db, #4963d7 );
     grid-template-areas:  
